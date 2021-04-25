@@ -273,3 +273,69 @@ h3.domoItem {
 .domo:last-child {
     margin-bottom:10px;
 }
+
+/* NEW INFO */
+body {
+    background: black;
+}
+h1 {
+    font-size: 2em;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+}
+h2 {
+    margin-bottom: 0.25em;
+}
+.body-content {
+    margin-left: 5em;
+    margin-right: 5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    min-height: 100vh;
+    background-color: gray;
+}
+.monster-image {
+    background-color: lightgray;
+    border: 2px solid black;
+    width: 300px;
+    float: right;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.body-content img {
+    max-width: 100%;
+}
+.monster-image {
+
+}
+.monster-image p {
+    margin: 8px;
+}
+.body-content .body-content-table {
+    display: inline-block;
+    background-color: lightgray;
+    border: 2px solid black;
+    width: auto;
+    padding-left: 12px;
+    padding-right: 24px;
+    margin-top: 2em;
+}
+.nav-footer {
+    border: 2px solid black;
+    background: lightgray;
+    text-align: center;
+}
+.advertisement {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .body-content {
+        margin: auto;
+        max-width: 1000px;
+    }
+}

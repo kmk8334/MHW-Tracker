@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <title>DomoMaker</title>
+  <title>MHW Tracker</title>
   <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
@@ -11,16 +11,72 @@
   <link rel="stylesheet" type="text/css" href="/assets/style.css"/>
 </head>
 <body>
-  <nav><a href="/login"><img id="logo" src="/assets/img/face.png" alt="face logo"/></a>
+  <nav><a href="/login"><img id="logo" src="https://www.vhv.rs/dpng/d/210-2101501_-icon-redux-monster-hunter-world-lagiacrus-icon.png" alt="logo PLACEHOLDER"/></a>
     <div class="navlink"><a href="/logout">Log out</a></div>
   </nav>
-  <section id="makeDomo">
+  <section class="body-content">
+    <section class="body-section">
+      <h1>Great Jagras</h1>
+    </section>
+    <section class="monster-image">
+      <img src="https://pm1.narvii.com/6808/0ee6b34e29408872c20c2af12cb20d50a902b4abv2_hq.jpg" alt="Great Jagras PLACEHOLDER.jpg">
+      <p>[IMAGE DESCRIPTION]</p>
+    </section>
+    <section class="monster-desc">
+      A [MONSTER NAME] is a large-sized [HERBIVORE/CARNIVORE/OMNIVORE] local to the [AREA]. [DESCRIBE MONSTER APPEARANCE].
+    </section>
+    <section class="body-content-table">
+      <h3>Contents</h3>
+      <p>
+        1 <a href="#behavior">Behavior</a>
+        <br />
+        2 <a href="#location">Location</a>
+        <br />
+        3 <a href="#combat-tactics">Combat Tactics</a>
+        <br />
+        4 <a href="#weak-points">Weak Points</a>
+        <br />
+        5 <a href="#loot">Loot</a>
+      </p>
+    </section>
+    {{#if true}}
+      <br />
+      <img class="advertisement" src="https://via.placeholder.com/480x360?text=Ad+-+Remove+with+Premium" alt="Placeholder ad">
+    {{/if}}
+    <hr>
+    <section class="body-section" id="behavior">
+      <h2>Behavior</h2>
+      On its own, [TYPICAL ACTIONS]. When provoked, [DEFENSIVE ACTIONS].
+    </section>
+    <hr>
+    <section class="body-section" id="location">
+      <h2>Location</h2>
+      The [MONSTER NAME] is found in the [AREA]. Its nest can be found in section [#] and looks like [NEST DESCRIPTION]. When not at home, the monster can usually be found at [LOCATION].
+    </section>
+    <hr>
+    <section class="body-section" id="combat-tactics">
+      <h2>Combat Tactics</h2>
+      [FIGHTING ADVICE].
+    </section>
+    {{#if true}}
+      <img class="advertisement" src="https://via.placeholder.com/480x360?text=Ad+-+Remove+with+Premium" alt="Placeholder ad">
+    {{/if}}
+    <hr>
+    <section class="body-section" id="weak-points">
+      <h2>Weak Points</h2>
+      <img src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/10121419/PS4_Screenshot_2018_01_29_23_46_11.png" alt="Great Jagras Weak Points PLACEHOLDER.jpg">
+    </section>
+    <hr>
+    <section class="body-section" id="loot">
+      <h2>Loot</h2>
+      <img src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/10121419/PS4_Screenshot_2018_01_29_23_46_11.png" alt="Great Jagras Loot Table PLACEHOLDER.jpg">
+    </section>
+    <hr>
+    <section class="nav-footer">
+      <p>
+        <a href="/barroth">Barroth</a> | <a href="/great-jagras">Great Jagras</a> | <a href="/kulu-ya-ku">Kulu-Ya-Ku</a> | <a href="/tobi-kadachi">Tobi-Kadachi</a>
+      </p>
+    </section>
   </section>
-  <section id="domos">
-  </section>
-  <div id="domoMessage"><img id="speech" src="/assets/img/speech.png" alt="speech box"/>
-    <h3><span id="errorMessage"></span></h3><img id="domo" src="assets/img/domo.png" alt="domo"/>
-  </div>
-  <script src="/assets/bundle.js"></script>
 </body>
 </html>
