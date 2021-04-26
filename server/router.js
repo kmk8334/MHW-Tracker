@@ -11,6 +11,10 @@ const router = (app) => {
   app.get('/logout', mid.requiresLogin, controllers.Account.logout);
   app.get('/maker', mid.requiresLogin, controllers.Domo.makerPage);
   app.post('/maker', mid.requiresLogin, controllers.Domo.make);
+  app.get('/barroth', mid.requiresLogin, controllers.InfoPage.barrothPage);
+  app.get('/great-jagras', mid.requiresLogin, controllers.InfoPage.greatJagrasPage);
+  app.get('/kulu-ya-ku', mid.requiresLogin, controllers.InfoPage.kuluYaKuPage);
+  app.get('/tobi-kadachi', mid.requiresLogin, controllers.InfoPage.tobiKadachiPage);
   app.get('/', mid.requiresSecure, mid.requiresLogout, controllers.Account.loginPage);
 };
 
