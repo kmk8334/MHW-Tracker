@@ -15,7 +15,7 @@ const login = (request, response) => {
   const req = request;
   const res = response;
 
-  // foce cast to strings to cover some security flaws
+  // force cast to strings to cover some security flaws
   const username = `${req.body.username}`;
   const password = `${req.body.pass}`;
 
@@ -79,6 +79,10 @@ const signup = (request, response) => {
   });
 };
 
+const userPage = (req, res) => {
+  res.render('user', { csrfToken: req.csrfToken() });
+};
+
 // Get a one-time token for each form
 const getToken = (request, response) => {
   const req = request;
@@ -95,4 +99,5 @@ module.exports.loginPage = loginPage;
 module.exports.login = login;
 module.exports.logout = logout;
 module.exports.signup = signup;
+module.exports.userPage = userPage;
 module.exports.getToken = getToken;
