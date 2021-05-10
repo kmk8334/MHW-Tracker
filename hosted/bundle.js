@@ -1,20 +1,14 @@
 "use strict";
 
-var setup = function setup(csrf) {// TODO: Apply CSRF tokens as necessary
-};
-
-var getToken = function getToken() {
-  sendAjax('GET', '/getToken', null, function (result) {
-    setup(result.csrfToken);
-  });
-};
-
 $(document).ready(function () {
-  getToken();
+  $("#go-premium").on('click', function () {// TODO: Make post request to /goPremium
+  });
 });
 "use strict";
 
-var handleError = function handleError(message) {// TODO: Process error messages
+var handleError = function handleError(message) {
+  // TODO: Process error messages
+  $("#errorMessage").text(message);
 };
 
 var redirect = function redirect(response) {

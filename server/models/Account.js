@@ -1,5 +1,6 @@
 const crypto = require('crypto');
 const mongoose = require('mongoose');
+// const { Account } = require('.');
 
 mongoose.Promise = global.Promise;
 
@@ -22,6 +23,10 @@ const AccountSchema = new mongoose.Schema({
   },
   password: {
     type: String,
+    required: true,
+  },
+  premium: {
+    type: Boolean,
     required: true,
   },
   createdDate: {
@@ -78,6 +83,21 @@ AccountSchema.statics.authenticate = (username, password, callback) => {
 
       return callback();
     });
+  });
+};
+
+AccountSchema.statics.isUserPremium = (username, callback) => {
+  console.log(`isUserPremium ${username}`);
+  AccountModel.findByUsername(username, (err, doc) => {
+    if (err) {
+      return callback(err);
+    }
+
+    if (!doc) {
+      return callback();
+    }
+
+    return callback(doc.premium);
   });
 };
 

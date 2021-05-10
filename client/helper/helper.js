@@ -1,5 +1,6 @@
 const handleError = (message) => {
     // TODO: Process error messages
+    $("#errorMessage").text(message);
 };
 
 const redirect = (response) => {

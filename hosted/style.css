@@ -108,7 +108,7 @@ nav:nth-child(1) {
 
 /* NEW INFO */
 body {
-    background: black;
+    background-image: url("img/site-background.jpg");
 }
 h1 {
     font-size: 2em;
@@ -125,12 +125,12 @@ h2 {
     padding-bottom: 2em;
     padding-left: 2em;
     padding-right: 2em;
-    min-height: 75vh;
-    background-color: gray;
+    min-height: calc(100vh - 50px - 4em);
+    background-color: #bbbbbbf2;
 }
 .monster-image {
     background-color: lightgray;
-    border: 2px solid black;
+    border: 2px solid #888;
     width: 300px;
     float: right;
     margin-left: 1em;
@@ -145,7 +145,7 @@ h2 {
 .body-content .body-content-table {
     display: inline-block;
     background-color: lightgray;
-    border: 2px solid black;
+    border: 2px solid #888;
     width: auto;
     padding-left: 12px;
     padding-right: 24px;
@@ -159,6 +159,11 @@ h2 {
 .advertisement {
     margin-top: 1em;
     margin-bottom: 1em;
+}
+div#errorMessageContainer {
+    position: relative;
+    bottom: 400px;
+    text-align: center;
 }
 
 /* Expand the sidebars at >1000px rather than 

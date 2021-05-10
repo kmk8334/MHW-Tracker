@@ -144,7 +144,9 @@ $(document).ready(function () {
 });
 "use strict";
 
-var handleError = function handleError(message) {// TODO: Process error messages
+var handleError = function handleError(message) {
+  // TODO: Process error messages
+  $("#errorMessage").text(message);
 };
 
 var redirect = function redirect(response) {
